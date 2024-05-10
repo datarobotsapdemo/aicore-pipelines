@@ -26,4 +26,4 @@ spec:
         - '-c'
       args:
        - |
-        print("!!WOOT WOOT!!")
+        print("**WOOT**WOOT**")
