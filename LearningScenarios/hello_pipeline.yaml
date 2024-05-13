@@ -26,4 +26,4 @@ spec:
         - '-c'
       args:
        - |
-        print("**WOOT**WOOT**")
+        print("One DataRobot to rule them all.")
