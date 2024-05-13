@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: saplesson-codepipeline-20240513123318
+  name: saplesson-codepipeline2-20240513123318
   annotations:
     scenarios.ai.sap.com/description: "Tutorial to add custom code to SAP AI Core"
     scenarios.ai.sap.com/name: "Code (Tutorial)"
     executables.ai.sap.com/description: "Trains model on median house prices"
     executables.ai.sap.com/name: "House Price (Sklearn Example)"
   labels:
-    scenarios.ai.sap.com/id: saplesson-scenario-20240513123318
+    scenarios.ai.sap.com/id: saplesson-scenario2-20240513123318
     ai.sap.com/version: "3"
 spec:
   imagePullSecrets:
