@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: code-pipeline # executable id, must be unique across all your workflows (YAML files), please modify this to any value (e.g. code-pipeline-12345) if you are not the only user of your SAP AI Core instance.
+  name: saplesson-codepipeline-20240513123318
   annotations:
     scenarios.ai.sap.com/description: "Tutorial to add custom code to SAP AI Core"
     scenarios.ai.sap.com/name: "Code (Tutorial)"
     executables.ai.sap.com/description: "Trains model on median house prices"
     executables.ai.sap.com/name: "House Price (Sklearn Example)"
   labels:
-    scenarios.ai.sap.com/id: "learning-code"
-    ai.sap.com/version: "1.0"
+    scenarios.ai.sap.com/id: saplesson-scenario-20240513123318
+    ai.sap.com/version: "3"
 spec:
   imagePullSecrets:
     - name: saplesson-docsecret-20240513123318 # your docker registry secret
