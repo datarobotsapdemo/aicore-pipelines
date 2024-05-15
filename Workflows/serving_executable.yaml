@@ -8,8 +8,8 @@ metadata:
     executables.ai.sap.com/description: "Tensorflow GPU Serving executable"
     executables.ai.sap.com/name: "serve-executable"
   labels:
-    scenarios.ai.sap.com/id: "tf-text-clf"
-    ai.sap.com/version: "3"
+    scenarios.ai.sap.com/id: "datarobot-servingscenario-20240515201413"
+    ai.sap.com/version: "4"
 spec:
   inputs:
     artifacts:
@@ -22,10 +22,10 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-          - name: datarobot-docsecret-20240515171218
+          - name: datarobot-docsecret-20240515201413
         containers:
         - name: kfserving-container
-          image: "docker.io/datarobotsapdemo/movie-review-clf-serve:3"
+          image: "docker.io/datarobotsapdemo/movie-review-clf-serve:4"
           ports:
             - containerPort: 9001
               protocol: TCP
